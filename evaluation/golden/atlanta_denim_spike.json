@@ -1,0 +1,13 @@
+{
+  "scenario": "Atlanta denim demand spike",
+  "event": {"product_id": "P472", "store_id": "ATL127"},
+  "expected_behavior": [
+    "detect anomaly (demand_change >= 0.25)",
+    "inspect inventory and identify stockout risk at the deficit store",
+    "find a transfer source among well-stocked stores",
+    "calculate expected revenue/margin opportunity deterministically",
+    "require human approval (confidence <= 0.90 per policy rule)",
+    "execute only after approval, idempotently",
+    "record predicted vs. actual outcome for evaluation"
+  ]
+}

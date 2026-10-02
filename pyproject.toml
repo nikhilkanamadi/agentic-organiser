@@ -1,0 +1,17 @@
+[project]
+name = "agentic-merchandising-os"
+version = "0.1.0"
+description = "Phase 1 MVP: Agentic Merchandising OS — offline/local simulation (demand anomaly -> inventory -> executive -> policy -> approval -> execution -> measurement)."
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "pydantic>=2.8",
+    "httpx>=0.27",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
